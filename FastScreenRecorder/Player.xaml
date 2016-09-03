@@ -1,0 +1,17 @@
+﻿<Window x:Class="FastScreenRecorder.Player"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FastScreenRecorder"
+        mc:Ignorable="d"
+        WindowStyle="None" 
+        Title="Player" Height="768" Width="1366" WindowState="Maximized" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Topmost="True" Focusable="False">
+    <Grid ScrollViewer.VerticalScrollBarVisibility="Disabled">
+        <Image  x:Name="image" HorizontalAlignment="Left" Height="768" VerticalAlignment="Top" Width="1366" OpacityMask="Black" Stretch="Fill"/>
+        <Slider x:Name="slider" HorizontalAlignment="Left" Margin="0,745,0,-7" VerticalAlignment="Top" Height="30" Width="1366" ValueChanged="slider_ValueChanged" BorderBrush="{x:Null}" Foreground="{x:Null}" Background="Black"/>
+        <Slider x:Name="speedSlider" HorizontalAlignment="Left" Margin="1199,721,0,0" VerticalAlignment="Top" Width="167" Maximum="6000" Minimum="1000" SmallChange="20" LargeChange="200" ValueChanged="speedSlider_ValueChanged" BorderBrush="{x:Null}" Foreground="{x:Null}" Background="Black"/>
+        <Button x:Name="play" Content="Play" HorizontalAlignment="Left" Margin="1144,720,0,0" VerticalAlignment="Top" Width="50" Height="20" Click="play_Click"/>
+
+    </Grid>
+</Window>
